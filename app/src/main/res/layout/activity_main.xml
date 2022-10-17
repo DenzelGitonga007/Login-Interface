@@ -8,15 +8,29 @@
     tools:context=".MainActivity">
 
 <!--    Additional code-->
-<!--    Set the text area-->
+<!--    Set the text-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/signin"
         android:text="Sign In"
         android:textColor="@color/white"
         android:layout_margin="50dp"
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="35dp"
+    />
+<!--    The input field(s)-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:id="@+id/username"
+        android:background="#30ffffff"
+        android:layout_below="@id/signin"
+        android:hint="Enter Username"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
     />
 </RelativeLayout>
