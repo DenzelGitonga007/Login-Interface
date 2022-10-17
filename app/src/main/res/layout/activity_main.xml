@@ -8,6 +8,18 @@
     tools:context=".MainActivity">
 
 <!--    Additional code-->
+<!--    Name of App-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_name"
+        android:text="Denzel App"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="25dp"
+    />
 <!--    Set the text-->
     <TextView
         android:layout_width="match_parent"
@@ -15,10 +27,11 @@
         android:id="@+id/signin"
         android:text="Sign In"
         android:textColor="@color/white"
-        android:layout_margin="50dp"
+        android:layout_margin="60dp"
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="35dp"
+
     />
 <!--    The input field(s)-->
 <!--    The username-->
@@ -56,11 +69,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
-        android:id="@+id/login_btn"
-        android:backgroundTint="@color/design_default_color_secondary"
-        android:layout_margin="20dp"
         android:layout_centerHorizontal="true"
+        android:id="@+id/login_btn"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:layout_margin="16dp"
         android:text="LOGIN"
+        android:textSize="18dp"
+        android:textColor="@color/white"
     />
-    
+<!--   OR - Alternative to creating an account-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:id="@+id/or"
+        android:text="OR"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+    />
+<!--    Create Account button-->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/or"
+        android:id="@+id/create_acc"
+        android:layout_centerHorizontal="true"
+        android:text="Create Account"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+    />
+<!--    Forgot password-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotpass"
+        android:layout_below="@id/create_acc"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Password?"
+        android:layout_margin="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+    />
 </RelativeLayout>
